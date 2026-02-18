@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="header_title_size">22sp</dimen>
+    <dimen name="header_icon_size">30dp</dimen>
+    <dimen name="header_separator_height">22dp</dimen>
+    <dimen name="header_separator_margin">12dp</dimen>
+</resources>

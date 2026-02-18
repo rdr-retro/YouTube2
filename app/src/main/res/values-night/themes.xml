@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Youtube2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FFBDBDBD</item>
+        <item name="colorPrimaryVariant">#FFA8A8A8</item>
+        <item name="colorOnPrimary">#FF222222</item>
+        <item name="colorSecondary">#FFD6D6D6</item>
+        <item name="colorSecondaryVariant">#FFBEBEBE</item>
+        <item name="colorOnSecondary">#FF222222</item>
+        <item name="colorAccent">#FFD6D6D6</item>
+        <item name="android:colorAccent">#FFD6D6D6</item>
+        <item name="colorControlActivated">#FFD6D6D6</item>
+        <item name="colorControlHighlight">#33D6D6D6</item>
+        <item name="android:colorControlHighlight">#33D6D6D6</item>
+        <item name="buttonStyle">@style/Widget.Youtube2.Button.Gray</item>
+    </style>
+
+    <style name="Widget.Youtube2.Button.Gray" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/search_button_skeu_light</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">#FF222222</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ThemeOverlay.Youtube2.SearchFullscreenDialog" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
