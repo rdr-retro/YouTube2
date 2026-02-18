@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/header_gradient"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <FrameLayout
+            android:id="@+id/channel_header_logo_container"
+            android:layout_width="90dp"
+            android:layout_height="44dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/channel_header_logo"
+                android:layout_width="90dp"
+                android:layout_height="44dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/youtube" />
+
+            <TextView
+                android:id="@+id/channel_header_logo_suffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="2dp"
+                android:rotation="16"
+                android:text="2"
+                android:textColor="#FFF2F2F2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/channel_screen_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Canal"
+            android:textColor="#FFF2F2F2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0E0E0E"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <FrameLayout
+            android:layout_width="79dp"
+            android:layout_height="76dp"
+            android:background="#FFFAFAFA">
+
+            <ImageView
+                android:id="@+id/channel_avatar"
+                android:layout_width="75dp"
+                android:layout_height="72dp"
+                android:layout_margin="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/channel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:rotationY="-4"
+                android:text="Canal"
+                android:textColor="#FFF6F6F6"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/channel_subscribers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Subscribers --"
+                android:textColor="#FFCBCBCB"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/channel_upload_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uploads 0"
+                android:textColor="#FFB9B9B9"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/channel_subscribe_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/channel_button_old"
+            android:backgroundTint="@null"
+            android:minWidth="64dp"
+            android:minHeight="24dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="Suscribirse"
+            android:textAllCaps="false"
+            android:textColor="#FF222222"
+            android:textSize="9sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FF080808"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_info_selected"
+            android:gravity="center"
+            android:text="Uploads"
+            android:textColor="#FFF0F0F0"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_unselected"
+            android:gravity="center"
+            android:text="Favoritos"
+            android:textColor="#FF9E9E9E"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_unselected"
+            android:gravity="center"
+            android:text="Playlists"
+            android:textColor="#FF9E9E9E"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/channel_sort_recent_button"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/channel_sort_button_red"
+            android:backgroundTint="@null"
+            android:text="Más recientes"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/channel_sort_oldest_button"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/channel_sort_button_red"
+            android:backgroundTint="@null"
+            android:text="Más antiguos"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/channel_empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Cargando videos..."
+        android:textColor="#FFC8C8C8"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/channel_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

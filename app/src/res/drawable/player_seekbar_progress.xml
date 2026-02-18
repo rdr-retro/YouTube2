@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background (Thin line) -->
+    <!-- Using 23dp/24dp insets to center a 1dp line in a 48dp SeekBar -->
+    <item 
+        android:id="@android:id/background"
+        android:top="23dp"
+        android:bottom="24dp">
+        <shape>
+            <solid android:color="#FF444444" />
+        </shape>
+    </item>
+    
+    <!-- Red Progress (Thin line) -->
+    <item 
+        android:id="@android:id/progress"
+        android:top="23dp"
+        android:bottom="24dp">
+        <clip>
+            <shape>
+                <solid android:color="#FFCC0000" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>
