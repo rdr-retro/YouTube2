@@ -1,0 +1,43 @@
+[versions]
+agp = "9.0.1"
+coreKtx = "1.12.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.6.1"
+material = "1.9.0"
+constraintlayout = "2.1.4"
+retrofit = "2.9.0"
+gson = "2.10.1"
+glide = "4.16.0"
+coroutines = "1.7.3"
+lifecycle = "2.6.2"
+multidex = "2.0.1"
+okhttpLegacy = "3.12.13"
+okioLegacy = "1.17.5"
+exoplayer = "2.18.7"
+swipeRefreshLayout = "1.1.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-multidex = { group = "androidx.multidex", name = "multidex", version.ref = "multidex" }
+okhttp-legacy = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttpLegacy" }
+okhttp-logging-legacy = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttpLegacy" }
+okio-legacy = { group = "com.squareup.okio", name = "okio", version.ref = "okioLegacy" }
+exoplayer = { group = "com.google.android.exoplayer", name = "exoplayer", version.ref = "exoplayer" }
+androidx-swipe-refresh-layout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipeRefreshLayout" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
