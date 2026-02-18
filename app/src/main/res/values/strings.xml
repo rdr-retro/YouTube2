@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">YouTube2</string>
-    <string name="welcome_message">Gracias por descargar YouTube2\nDisfrutalo</string>
-    <string name="accept">Aceptar</string>
-    <string name="player_background_title">YouTube2 reproduciendo</string>
-    <string name="player_background_text">La reproducción sigue en segundo plano</string>
-    <string name="player_background_channel_name">Reproducción en segundo plano</string>
-    <string name="player_background_channel_desc">Mantiene el video reproduciendo fuera de la app</string>
-</resources>
